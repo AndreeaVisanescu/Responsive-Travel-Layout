@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 10px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+}
+.container {
+    height: 100%;
+    padding-left: 30px;
+    position: relative;
+}
+header {
+    height: 10%;
+    display: flex;
+}
+.header-title-wrapper {
+    font-size: 32px;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1px solid #cecdcd; 
+}
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.desktop-menu-wrapper {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.desktop-menu-wrapper a {
+    text-decoration: none;
+    color: #bebebe;
+    font-size: 20px; 
+    font-weight: 100;
+}
+.desktop-menu-wrapper a:hover {
+    color: #000;
+}
+.mobile-menu-wrapper {
+    display: none;
+    color: #f4dfc4;
+}
+main {
+    height: 65%;
+    display: flex;
+}
+.text-wrapper {
+    width: 35%;
+}
+.travel-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.travel-wrapper div:first-child {
+    font-size: 80px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.travel-wrapper div:nth-child(2) {
+    font-size: 50px;
+    font-weight: 100;
+}
+.travel-wrapper div:nth-child(3) {
+    font-size: 14px;
+    width: 80%;
+    text-align: justify;
+}
+.travel-wrapper div:last-child {
+    font-size: 32px;
+    color: #f5d3a8;
+    word-spacing: 12px;
+}
+.arrows-wrapper i {
+    font-size: 40px;
+    border: 1px solid #f5d3a8;
+    padding: 0 5px 0 10px;
+    cursor: pointer;
+}
+.weekend-wrapper {
+    position: absolute;
+    height: 35%;
+    width: 27%;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    bottom: 0;
+    left: 32%;
+    padding: 10px 15px;
+}
+.weekend-wrapper div {
+    font-size: 28px;
+    padding: 5px 0;
+}
+.photo-wrapper {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 65%;
+}
+.paragraphs {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    color: #808080;
+}
+.design-paragraphs {
+    color: #fff;
+}
+footer {
+    height: 25%;
+}
+.design-wrapper {
+    float: right;
+    width: 43%;
+    height: 100%;
+    padding: 10px 10px 10px 40px;
+    color: white;
+    font-size: 14px;
+    background-color:#f4dfc4;
+}
+.design-wrapper div:first-child {
+    font-size: 25px;
+    padding: 5px 0;
+}
+.design-wrapper button {
+    color: white;
+    background-color:#f4dfc4;;
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.design-wrapper div:last-child {
+    padding: 5px 0;
+}
+@media (max-width:599px) {
+    .container {
+        padding: 0;
+    }
+    .header-title-wrapper {
+        font-size: 13px;
+        width: 80%;
+        padding-left: 10px;
+    }
+    .desktop-menu-wrapper {
+        display: none;
+    }
+    .mobile-menu-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        font-size: 32px;
+        color: rgb(194, 191, 191);
+        cursor: pointer;
+    }
+    .mobile-menu-wrapper i:hover {
+        color: #000;
+    }
+    main {
+        flex-direction: column-reverse;
+        height: 80%;
+    }
+    .photo-wrapper {
+        width: 100%;
+        height: 60%;
+    }
+    .text-wrapper {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    .travel-wrapper {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .arrows-wrapper {
+        display: none;
+    }
+    .travel-wrapper div:first-child {
+        padding: 0;
+        font-size: 35px;
+    }
+    .travel-wrapper div:nth-child(2) {
+        font-size: 20px;
+    }
+    .travel-wrapper div:nth-child(3) {
+        font-size: 13px;
+        width: 100%;
+    }
+    .weekend-wrapper {
+        position: relative;
+        width: 50%;
+        height: auto;
+        font-size: 13px;
+        padding: 10px;
+        left: 0;
+    }
+    .weekend-wrapper div {
+        font-size: 20px;
+    }
+    footer {
+        height: 20%;
+    }
+    .design-wrapper {
+        clear: left;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .design-wrapper div:first-child {
+        padding: 0;
+    }
+}
+.wrapper-button-click {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+}
+.wrapper-button-click .header-text{
+    float: left;
+    width: 80%;
+    text-align: left;
+    font-size: 25px;
+    padding: 15px 30px;
+    color: #fff;
+}
+.icon-menu {
+    display: inline-block;
+    width: 20%;
+    height: 70px;
+}
+.icon-menu button {
+    background: transparent;
+    border: none;
+    color: #c09c78;
+    font-size: 50px;
+    padding: 10px 0;
+    margin: 0;
+}
+.mobile-menu {
+    display: block;
+    width: 100%;
+    padding: 10% 30px;
+}
+.mobile-menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-kerning: normal;
+    letter-spacing: 4px;
+    line-height: 60px;
+    font-weight: 100;
+    font-family: 'Skia', sans-serif;
+}
+.mobile-footer {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: auto;
+    display: inline-flex;
+    bottom: 0;
+    padding-left: 5%;
+    margin: 0 auto;
+}
+.mobile-footer span:first-child{
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid rgb(104, 104, 104);   
+}
+.mobile-footer span:last-child{
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid rgb(104, 104, 104);
+    border-left: 1px solid rgb(104, 104, 104);
+}
+.mobile-footer span {
+    height: 60px;
+    vertical-align: middle;
+}
+.mobile-footer span i{
+    font-size: 30px;
+    color: rgb(104, 104, 104);
+    margin: auto 0;
+    padding: 20px 0 0 0;
+}
+.hidden {
+    display: none;
+}

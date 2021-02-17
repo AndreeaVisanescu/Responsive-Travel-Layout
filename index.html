@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./resourcess/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> <!--font-family: 'Abril Fatface', cursive;-->
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet"> <!--font-family: 'Quattrocento Sans', sans-serif;-->
+        <link href="http://fonts.cdnfonts.com/css/skia" rel="stylesheet">
+        <link href="./bundles/font-awesome/css/all.css" rel="stylesheet">
+        <meta name="description" content="Responsiveness Layout">
+        <meta name="keywords" content="Responsiveness">
+        <meta name="author" content="Andreea Visanescu">
+        <link rel="stylesheet" href="./resources/styles.css">
+        <title>Responsiveness Layout</title>
+    </head>
+    <body>
+        <div id="bodyWrapper" class="container">
+            <header>
+                <div class="header-title-wrapper">
+                    <h1>Best Escapes</h1>
+                </div>
+                <div class="desktop-menu-wrapper">
+                    <a href="#">Home</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Last minute</a>
+                    <a href="#">Register/Login</a>
+                </div>
+                <div id="seeMenu" class="mobile-menu-wrapper">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header>
+            
+            <main>
+                <div class="text-wrapper">
+                    <div class="travel-wrapper">
+                        <div>travel</div>
+                        <div>and inspire<br> your life</div>
+                        <div class="paragraphs">
+                            We make your dreams come true. Just design your travel with us and start to inspire your life.<br>
+                            <br>
+                            Your perfect travel is just as far as a few clicks.
+                        </div>
+                        <div class="arrows-wrapper">
+                            <i class="fas fa-caret-left"></i> <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                    <div class="weekend-wrapper">
+                        <div>Weekend escapes</div>
+                        <p class="paragraphs">2 days, 48hours. We have the best escapes for your pleasure.</p>
+                        
+                        <div>Week trips</div>
+                        <p class="paragraphs">Europe, Asia, a lost island...take a plane and forget your routine for a full week.</p>
+                        
+                    </div>
+                </div>
+                <div class="photo-wrapper"></div>
+            </main>
+            <footer>
+                <div class="design-wrapper">
+                    <div>Design your own holidays</div>
+                    <p class="design-paragraphs">With our online personalized interface you can design the holidays of your dreams. Select the date and destination and we take care of everything.</p>
+                    <div><button type="button">Start</button> </div>
+                </div>
+            </footer>
+        </div>
+
+        <div id="mobileMenu" class="wrapper-button-click hidden">
+            <div class="header-text">Best Escapes</div>
+            
+            <div class="icon-menu">
+                <button id="removeMenu"><i class="fas fa-times"></i></button>
+            </div>
+    
+            <section class="mobile-menu">
+                    <a href="#"><b>Home</b></a>
+                    <a href="#">Specials</a>
+                    <a href="#">Last Minute</a>
+                    <a href="#">Register/Login</a>
+            </section>
+    
+            <footer class="mobile-footer">
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </footer>
+        </div>
+    
+        <script src="./resources/main.js"></script>
+        
+        <noscript>
+            Your browser currently does not support or has JS disabled.
+        </noscript>
+    </body>
+</html>
